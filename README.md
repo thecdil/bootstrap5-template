@@ -20,7 +20,7 @@ Demo: <https://thecdil.github.io/bootstrap5-template/>
     - `nav_order` navbar items will be sorted using this number. 
 - Use "includes" to simplify adding Bootstrap features to Markdown pages (see comments in the "_include/" files for instructions).
 
-See [docs/create-website.md](https://github.com/thecdil/bootstrap-template/blob/main/docs/create-website.md) for more details.
+See [docs/create-website.md](https://github.com/thecdil/bootstrap5-template/blob/main/docs/create-website.md) for more details.
 
 ## Customize 
 
