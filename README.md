@@ -32,7 +32,7 @@ See [docs/create-website.md](https://github.com/thecdil/bootstrap5-template/blob
 
 Included in assets/lib folder:
 
-- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) 5.1
-- [Bootstrap Icons](https://icons.getbootstrap.com/) 1.7.1
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) 5.2
+- [Bootstrap Icons](https://icons.getbootstrap.com/) 1.9
 - [lunr.js](https://lunrjs.com/) 2.3.9
 - [lazysizes](https://github.com/aFarkas/lazysizes) 5.3.2
