@@ -92,6 +92,11 @@ a { text-decoration: none; }
     right: 20px; 
     z-index: 99;
     font-size: 40px; 
+    svg {
+        width: 1em;
+        height: 1em;
+        vertical-align: -0.1em;
+    }
 }
 
 /* bootstrap icons tweaks */
