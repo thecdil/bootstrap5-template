@@ -1,7 +1,7 @@
 # bootstrap5-template
 
 [bootstrap5-template](https://github.com/thecdil/bootstrap-template) is a basic template repository to create a [Bootstrap 5](https://getbootstrap.com/) site using Jekyll on GitHub Pages (or where every you want to host it). 
-The layout is based on the [Bootstrap starter template example](https://getbootstrap.com/docs/5.1/examples/) with a navbar, search box (using lunr.js), and footer.
+The layout is based on the [Bootstrap starter template example](https://getbootstrap.com/docs/5.3/examples/) with a navbar, search box (using lunr.js), and footer.
 It is intended as a quick starting point for creating new web projects.
 
 Demo: <https://thecdil.github.io/bootstrap5-template/>
@@ -32,7 +32,7 @@ See [docs/create-website.md](https://github.com/thecdil/bootstrap5-template/blob
 
 Included in assets/lib folder:
 
-- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) 5.2
-- [Bootstrap Icons](https://icons.getbootstrap.com/) 1.9
+- [Bootstrap](https://getbootstrap.com/docs/5.1/getting-started/introduction/) 5.3.2
+- [Bootstrap Icons](https://icons.getbootstrap.com/) 1.11.2
 - [lunr.js](https://lunrjs.com/) 2.3.9
 - [lazysizes](https://github.com/aFarkas/lazysizes) 5.3.2
