@@ -34,8 +34,6 @@ Horizontal rule:
 
 --------------
 
-{% include figure.html img="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/VAN_CAT.png/480px-VAN_CAT.png" alt="white cat" caption="I found this [Cat image on Wikimedia](https://commons.wikimedia.org/wiki/File:VAN_CAT.png)." %}
-
 > A block quote.
 > Is like this.
 {:.blockquote}
@@ -48,3 +46,13 @@ Horizontal rule:
 | cats | 3 | 6 |
 | muffins | 15 | 30 |
 {:.table .table-striped}
+
+## Use Includes to Add Features
+
+{% include accordion.html title1="Example Accordion" text1="Some Content" title2="Section two" text2="Hey there!" title3="Section three" text3="This is more info" %}
+
+{% include figure.html img="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/VAN_CAT.png/480px-VAN_CAT.png" alt="white cat" caption="Example figure, I found this [Cat image on Wikimedia](https://commons.wikimedia.org/wiki/File:VAN_CAT.png)." %}
+
+{% include card.html text="Some interesting text" header="Example card" %}
+
+{% include alert.html text="This is an example alert!" color="success" align="center" %}
