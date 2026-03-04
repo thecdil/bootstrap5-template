@@ -57,10 +57,10 @@ var resultsdiv = document.getElementById('lunrResults');
 var searchbox = document.getElementById('lunrSearchBox');
 /* get query string */
 document.addEventListener('DOMContentLoaded', function(event) {
-  if (window.location.search) {
-    var queryString = decodeURIComponent(window.location.search.substring(1).split("=")[1]);
+  var queryString = new URLSearchParams(window.location.search).get('q');
+  if (queryString) {
     searchbox.value = queryString;
-    lunr_search ();
+    lunr_search();
   }
 });
 
