@@ -36,25 +36,25 @@ function lunr_search () {
         }
       })
     });*/
-  var resultslist = "<tr><td><p>" + result.length + " Results(s) found</p></td></tr>";
+  var resultslist = '<p class="border-bottom mb-3"><small>' + result.length + ' Results(s) found</small></p><ul class="list-unstyled">';
   //resultsdiv.prepend('<p class="">' + result.length + ' Result(s) found</p>');
   for (var item in result) {
     var ref = result[item].ref;
     var searchitem =
-      '<tr>'+
-          '<td class="">' +
+      '<li class="border-bottom mb-3">'+
             '<p class="h4"><a href="' + store[ref].url + '">' + store[ref].title+ '</a></p>' +
             '<p class="ms-3">' +
-            store[ref].text.split(" ").splice(0,20).join(" ") + '...<br>' +
-            '</p></td>' +
-      '</tr>';
+            store[ref].text.split(" ").splice(0,20).join(" ") + '...' +
+            '</p>'
+      '</li>';
     resultslist += searchitem;
   }
+  resultslist += '</ul>';
   resultsdiv.innerHTML = resultslist;
 }
 /* set elements */
-var resultsdiv = document.getElementById('lunrResults');
-var searchbox = document.getElementById('lunrSearchBox');
+var resultsdiv = document.getElementById('searchResults');
+var searchbox = document.getElementById('searchBox');
 /* get query string */
 document.addEventListener('DOMContentLoaded', function(event) {
   var queryString = new URLSearchParams(window.location.search).get('q');
