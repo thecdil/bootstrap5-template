@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
     <div class="container">
         <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title }}</a>
 
@@ -16,17 +16,8 @@
                 {% endfor %}
             </ul>
             {% if site.search == true %}
-            <script>
-                function site_search() {
-                    var query = document.getElementById("site-search").value;
-                    window.open("{{ '/search.html' | relative_url }}?q=" + encodeURIComponent(query), "_self" );
-                    }
-            </script>
-            <form class="d-flex" onsubmit="site_search(); return false;">
-                <div class="input-group">
-                    <input id="site-search" class="form-control" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-primary" type="submit">{% include icon.html icon="search" label="Submit Search" %}</button>
-                </div>
+            <form role="search" id="nav-search" action="{{ '/search/index.html' | relative_url }}" method="GET">
+                <input id="nav-search-box" class="form-control" type="search" placeholder="Search" aria-label="Search site" name="q">
             </form>
             {% endif %}
         </div>
